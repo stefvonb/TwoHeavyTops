@@ -211,6 +211,7 @@ namespace Rivet {
 
       _c_passed_presel->fill(weight);
 
+      // Signal region
       if (ETmiss < 350.0/GeV) vetoEvent;
       if (mTW < 170.0/GeV) vetoEvent;
       // Insert mT2 cut if we really need to, although this relies on b-tagging weights etc.
